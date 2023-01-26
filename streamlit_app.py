@@ -29,7 +29,7 @@ streamlit.dataframe(fruits_to_show)
 streamlit.header('Fruityvice Fruit Advice!')
 
 try:
-  fruit_choice=streamlit.text_input('What fruit would you like information about?')
+  fruit_choice=streamlit.text_input('What fruit would you like information about?','kiwi')
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
     else:
@@ -39,3 +39,5 @@ try:
       
 except URLError as e:
     streamlit.error()
+
+    
