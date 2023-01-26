@@ -21,7 +21,9 @@ streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 streamlit.dataframe(my_fruit_list)
 import snowflake.connector
 
-#New section to display fruitvice api source 
+#New section to display fruitvice api source
+streamlit.header('Fruityvice Fruit Advice!')
+
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
